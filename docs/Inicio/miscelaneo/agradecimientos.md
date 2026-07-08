@@ -1,0 +1,13 @@
+---
+title: Agradecimientos
+sidebar_label: Agradecimientos
+---
+
+# Agradecimientos
+
+Queremos agradecer de corazón a todos los proyectos y comunidades que hacen posible este espacio y el aprendizaje de japonés por inmersión:
+
+* **Docusaurus:** Por proveer este fantástico framework para estructurar la documentación de forma moderna y veloz.
+* **Yomitan / Yomichan:** Por ser la herramienta definitiva de consulta de diccionarios integrada.
+* **Anki:** Por su software de repetición espaciada que nos ayuda a retener el vocabulario a largo plazo.
+* **Comunidad Yoru Cafe:** A todos los miembros por su constante apoyo, retroalimentación y pasión por la inmersión en japonés.

@@ -31,5 +31,14 @@ module.exports = {
       label: 'Otras guías',
       items: ['Inicio/Otras guias/Guia general'],
     },
+    {
+      type: 'category',
+      label: 'Misceláneo',
+      items: [
+        'Inicio/miscelaneo/historial_cambios',
+        'Inicio/miscelaneo/agradecimientos',
+        'Inicio/miscelaneo/acerca_de'
+      ],
+    },
   ],
 };
