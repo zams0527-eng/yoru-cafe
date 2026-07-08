@@ -10,7 +10,7 @@ sidebar_label: Agradecimientos
 Un agradecimiento muy especial a las personas que ayudaron directamente a que este proyecto y el aprendizaje del idioma fueran posibles:
 
 * **Yozhy:** Por facilitarme las herramientas necesarias, compartir generosamente su conocimiento y ser un gran pana en el Discord.
-* **Taro:** Por compartir su sabiduría y valiosos conocimientos sobre el idioma japonés.
+* **Taro:** Por compartir su sabiduría y valiosos conocimientos sobre el idioma en general.
 * **Galletas:** Por estar ahí y brindar su constante apoyo a lo largo del proceso. ¡Muchas gracias!
 
 ---
