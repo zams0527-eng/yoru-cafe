@@ -323,21 +323,27 @@ body {
 
 /* Lista de features del hero */
 .yc-hero-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 32px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
 }
 
 .yc-hero-features li {
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.5);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0;
+  font-size: 0.88rem !important;
+  color: rgba(255,255,255,0.5) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.yc-hero-features li::marker {
+  display: none !important;
+  content: "" !important;
 }
 
 .yc-hero-features li::before {
@@ -908,6 +914,8 @@ article strong {
   width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  margin-left: 0 !important; /* Quita el offset del grid de Docusaurus */
+  margin-right: 0 !important;
 }
 
 /* 4. El wrapper del artículo */
@@ -915,6 +923,8 @@ article strong {
 article:has(.yc-hero) {
   max-width: 100% !important;
   width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* 5. Hero y cards centrados con max-width razonable */
@@ -957,7 +967,12 @@ article:has(.yc-hero) {
     margin: 0 auto;
   }
   .yc-hero-actions { justify-content: center; }
-  .yc-hero-features { align-items: center; }
+  .yc-hero-features { 
+    align-items: center !important; 
+  }
+  .yc-hero-features li {
+    justify-content: center !important;
+  }
   .yc-hero-sub { max-width: 100%; }
   .container:has(.yc-hero) {
     padding-left: 16px !important;
