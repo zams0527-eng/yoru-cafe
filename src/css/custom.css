@@ -1008,6 +1008,41 @@ article:has(.yc-hero) {
   color: rgba(255,255,255,0.3) !important;
 }
 
+/* Ajustes de búsqueda responsivos para evitar solapamientos en móvil */
+@media (max-width: 768px) {
+  .navbar__search-input {
+    width: 120px !important;
+    padding: 7px 10px !important;
+  }
+  .navbar__search-input:focus {
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__title {
+    font-size: 1.05rem !important;
+    letter-spacing: 1px !important;
+  }
+  .navbar__search-input {
+    width: 80px !important;
+    padding: 6px 8px !important;
+    font-size: 0.75rem !important;
+  }
+  .navbar__search-input:focus {
+    width: 120px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar__title {
+    display: none !important; /* Oculta el texto en pantallas extremadamente pequeñas si es necesario, dejando solo el logo */
+  }
+  .navbar__search-input {
+    width: 90px !important;
+  }
+}
+
 /* Ocultar el spinner de "Loading..." */
 .loadingRing_RJI3,
 .searchBarLoadingRing_YnHq {
