@@ -5,6 +5,10 @@ sidebar_label: Historial de cambios
 
 # Historial de cambios
 
+### Versión 1.0.2
+* **Búsqueda Rápida:** Se agregó el botón del librito (`BookOpen`) al menú de acciones de la ventana flotante del diccionario para permitir la búsqueda directa y rápida de la palabra en **Jisho.org**.
+* **Distribución:** Se compilaron y actualizaron los ejecutables para Windows y Android correspondientes a la versión `1.0.2` en la sección de descargas.
+
 ### Versión 1.0.1
 * **Corrección en Anki:** Se solucionó el problema de la clausura obsoleta (*stale closure*) en el atajo de teclado para minar palabras (`m`), de modo que las definiciones ahora se envían correctamente a Anki.
 * **Ajustes:** Se agregó la pestaña "Acerca de / Versión" dentro de la configuración para visualizar la versión y su registro de cambios.
