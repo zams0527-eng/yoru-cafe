@@ -1159,75 +1159,84 @@ body.yc-lightbox-noscroll {
    NAVBAR RESPONSIVE MOBILE FIX
 ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 996px) {
-  .navbar {
-    height: 60px; /* Reducido ligeramente para mayor espacio en móvil */
+  html body .navbar {
+    height: 64px !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
-  .navbar__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 0 8px;
+  html body .navbar__inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+    width: 100% !important;
+    padding: 0 10px !important;
   }
 
-  /* Alinear logo e icono */
-  .navbar__brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-right: 0;
-    padding: 0;
-    height: 100%;
+  /* Alinear logo e icono al centro vertical */
+  html body .navbar__brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
   }
 
-  .navbar__logo {
-    height: 28px !important;
-    width: auto;
+  html body .navbar__logo {
+    height: 32px !important;
+    width: auto !important;
     margin: 0 !important;
   }
 
-  .navbar__title {
+  html body .navbar__title {
     font-size: 1.05rem !important;
     letter-spacing: 1px !important;
     margin: 0 !important;
-    line-height: 1;
-    display: inline-block;
+    line-height: 1 !important;
+    display: inline-block !important;
   }
 
-  .navbar__toggle {
+  html body .navbar__toggle {
     margin: 0 4px 0 0 !important;
     padding: 6px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  /* Alinear el buscador de Lunr a la derecha de forma prolija */
-  .navbar__search {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: auto !important;
-    padding: 0 4px 0 0 !important;
+  /* Centrar verticalmente el buscador Lunr */
+  html body .navbarSearchContainer,
+  html body .navbar__search {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    margin: 0 0 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    align-self: center !important;
   }
 
-  /* Reducir y afinar el input de búsqueda */
-  .navbar__search-input {
-    height: 32px !important;
+  /* Reducir y afinar el input de búsqueda en móviles */
+  html body .navbar__search-input {
+    height: 34px !important;
     font-size: 0.8rem !important;
     padding: 0 12px !important;
     background-color: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
     border-radius: 8px !important;
-    max-width: 110px !important; /* Evita que choque con el título */
+    max-width: 110px !important;
     width: 110px !important;
-    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
     color: var(--yc-text) !important;
+    margin: 0 !important;
+    align-self: center !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
-  .navbar__search-input:focus {
+  html body .navbar__search-input:focus {
     max-width: 145px !important;
     width: 145px !important;
     border-color: var(--yc-yellow) !important;
@@ -1235,37 +1244,37 @@ body.yc-lightbox-noscroll {
     box-shadow: 0 0 10px var(--yc-yellow-glow) !important;
   }
 
-  /* Eliminar overlays molestos que puedan superponerse */
-  .navbar__items {
-    display: flex;
-    align-items: center;
+  /* Eliminar items redundantes */
+  html body .navbar__items {
+    display: flex !important;
+    align-items: center !important;
   }
 
-  .navbar__items--right {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  html body .navbar__items--right {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
   }
 }
 
-/* En teléfonos compactos (380px o menos), ocultamos el texto Yoru Cafe
-   para dar prioridad al logo de la flor y a la barra de búsqueda */
+/* En teléfonos compactos (380px o menos) */
 @media (max-width: 380px) {
-  .navbar__title {
+  html body .navbar__title {
     display: none !important;
   }
   
-  .navbar__brand {
-    gap: 0;
+  html body .navbar__brand {
+    gap: 0 !important;
   }
 
-  .navbar__search-input {
-    max-width: 130px !important;
-    width: 130px !important;
+  html body .navbar__search-input {
+    max-width: 125px !important;
+    width: 125px !important;
   }
 
-  .navbar__search-input:focus {
-    max-width: 160px !important;
-    width: 160px !important;
+  html body .navbar__search-input:focus {
+    max-width: 155px !important;
+    width: 155px !important;
   }
-}
+}
+
