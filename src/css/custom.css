@@ -1435,3 +1435,34 @@ body.yc-lightbox-noscroll {
 .yc-mobile-menu-item--active .yc-mobile-menu-chevron {
   border-color: var(--yc-yellow);
 }
+
+/* Prevent horizontal scrolling globally on all mobile devices */
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Ensure all custom layout containers scale down correctly and never cause overflow */
+.yc-hero,
+.yc-cards-grid,
+.yc-cards-row,
+.yc-notice,
+.yc-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Fix flex wrapping issues in hero actions for very narrow screens */
+@media (max-width: 480px) {
+  .yc-hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+  .yc-hero-actions a {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
