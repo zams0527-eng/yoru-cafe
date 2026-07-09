@@ -5,6 +5,16 @@ sidebar_label: Historial de cambios
 
 # Historial de cambios
 
+### Versión 1.0.3
+* **Ajuste Inteligente del Popup**: Ahora la ventana flotante del diccionario se abre automáticamente **arriba** de la palabra si se hace clic en la mitad inferior de la pantalla, previniendo recortes e incomodidades visuales.
+* **Detección Dinámica de Colisiones**: Si el popup sobrepasa la pantalla por debajo debido al tamaño de la ventana, sube de inmediato para quedar visible con scroll interno integrado.
+* **Solución de Animación CSS**: Corregido un conflicto en las transiciones que forzaba al popup a permanecer debajo de la palabra.
+* **Cero Saltos de Texto en Hover**: Eliminado el desplazamiento involuntario de las líneas de texto al pasar el cursor sobre palabras (provocado por el pseudo-elemento del checkmark).
+* **Diseño Yoru Café en Diálogos**: Reemplazadas todas las alertas nativas del navegador (`alert` y `confirm`) por elegantes modales premium personalizados con estilo cyberpunk oscuro, y añadidas notificaciones tipo *toast* en biblioteca.
+* **Anki Inteligente sin Duplicados**: Al marcar palabras como "Conocido", Yoru realiza una búsqueda profunda en todos tus mazos probando múltiples nombres de campos comunes (`Vocabulary-Kanji`, `Expression`, etc.) para evitar duplicados. Si la tarjeta no existe, la crea en tu mazo y la madura automáticamente (intervalo de 30 días) en silencio.
+* **Persistencia del Idioma**: El idioma de la interfaz seleccionado se almacena en los archivos de respaldo y se restaura automáticamente en las importaciones.
+* **Optimización Extrema**: Añadido caché en memoria para las búsquedas de diccionarios en Yomitan y eliminados renders innecesarios al pasar páginas, logrando una transición instantánea y fluida.
+
 ### Versión 1.0.2
 * **Búsqueda Rápida:** Se agregó el botón del librito (`BookOpen`) al menú de acciones de la ventana flotante del diccionario para permitir la búsqueda directa y rápida de la palabra en **Jisho.org**.
 * **Distribución:** Se compilaron y actualizaron los ejecutables para Windows y Android correspondientes a la versión `1.0.2` en la sección de descargas.
