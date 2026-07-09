@@ -14,9 +14,9 @@ slug: /
     <h1 className="yc-hero-title">
       Aprende japonés e idiomas <span>de verdad.</span>
     </h1>
-    <p className="yc-hero-sub">
+    <div className="yc-hero-sub">
       Guías gratuitas para aprender japonés y otros idiomas mediante inmersión. El método definitivo para adquirir tu idioma de destino de forma natural, consumiendo el contenido que te gusta.
-    </p>
+    </div>
     <ul className="yc-hero-features">
       <li>Sin clases aburridas ni memorización mecánica.</li>
       <li>Aprende con anime, novelas y contenido real de tu interés.</li>
@@ -45,9 +45,9 @@ slug: /
 
 <div className="yc-notice">
   <span className="yc-notice-icon">⚡</span>
-  <p className="yc-notice-text">
+  <div className="yc-notice-text">
     Esta guía lleva el método de inmersión a la comunidad hispanohablante. Toda la información aquí es gratuita y siempre lo será.
-  </p>
+  </div>
 </div>
 
 <div className="yc-section-label">Explorar</div>

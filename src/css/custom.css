@@ -1277,4 +1277,161 @@ body.yc-lightbox-noscroll {
     width: 155px !important;
   }
 }
-
+
+/* Spacing adjustments on mobile (avoid sticking to sides) */
+@media (max-width: 900px) {
+  .col:has(.yc-hero),
+  [class*='docItemCol']:has(.yc-hero) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CUSTOM MOBILE MENU DRAWER
+   Bypasses Docusaurus broken mobile menu and implements a clean one
+   matching the design system.
+   ═══════════════════════════════════════════════════════════════ */
+
+.yc-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -280px; /* Start hidden */
+  width: 280px;
+  height: 100vh;
+  background: #0f0f12;
+  border-right: 1px solid var(--yc-border);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 16px 8px;
+}
+
+.yc-mobile-menu.yc-mobile-menu--open {
+  transform: translateX(280px); /* Slide in */
+}
+
+/* Background overlay when menu is open */
+.yc-mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.yc-mobile-menu-overlay.yc-mobile-menu-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.yc-mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px 24px;
+  border-bottom: 1px solid var(--yc-border);
+  margin-bottom: 16px;
+}
+
+.yc-mobile-menu-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yc-mobile-menu-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.yc-mobile-menu-title {
+  font-family: var(--yc-font);
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  color: var(--yc-yellow);
+}
+
+.yc-mobile-menu-close {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.yc-mobile-menu-close:hover {
+  background: rgba(255, 224, 0, 0.1);
+  color: var(--yc-yellow);
+  border-color: rgba(255, 224, 0, 0.3);
+}
+
+.yc-mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.yc-mobile-menu-item {
+  font-family: var(--yc-font);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65) !important;
+  border-radius: var(--yc-radius-sm);
+  padding: 11px 16px !important;
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.yc-mobile-menu-item:hover {
+  color: var(--yc-yellow) !important;
+  background: var(--yc-yellow-dim) !important;
+}
+
+.yc-mobile-menu-item--active {
+  color: var(--yc-yellow) !important;
+  background: var(--yc-yellow-dim) !important;
+  font-weight: 700 !important;
+  box-shadow: inset 3px 0 0 var(--yc-yellow);
+}
+
+.yc-mobile-menu-icon {
+  font-size: 1.15rem;
+  width: 20px;
+  text-align: center;
+}
+
+.yc-mobile-menu-chevron {
+  margin-left: auto;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: border-color 0.15s ease;
+}
+
+.yc-mobile-menu-item:hover .yc-mobile-menu-chevron,
+.yc-mobile-menu-item--active .yc-mobile-menu-chevron {
+  border-color: var(--yc-yellow);
+}
