@@ -1199,8 +1199,8 @@ body.yc-lightbox-noscroll {
   }
 
   html body .navbar__toggle {
-    margin: 0 4px 0 0 !important;
-    padding: 6px !important;
+    margin: 0 4px 0 -12px !important;
+    padding: 6px 6px 6px 12px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
