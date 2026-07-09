@@ -1199,7 +1199,7 @@ body.yc-lightbox-noscroll {
   }
 
   html body .navbar__toggle {
-    margin: 0 !important;
+    margin: 0 0 0 -6px !important;
     padding: 6px !important;
     display: flex !important;
     align-items: center !important;
@@ -1212,7 +1212,7 @@ body.yc-lightbox-noscroll {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
-    margin: 0 0 0 auto !important;
+    margin: 0 !important;
     padding: 0 !important;
     height: 100% !important;
     align-self: center !important;
@@ -1248,12 +1248,16 @@ body.yc-lightbox-noscroll {
   html body .navbar__items {
     display: flex !important;
     align-items: center !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
-
+ 
   html body .navbar__items--right {
     display: flex !important;
     align-items: center !important;
     margin-left: auto !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
