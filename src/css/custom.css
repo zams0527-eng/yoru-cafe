@@ -1154,3 +1154,118 @@ article img:hover {
 body.yc-lightbox-noscroll {
   overflow: hidden;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVBAR RESPONSIVE MOBILE FIX
+═══════════════════════════════════════════════════════════════ */
+@media (max-width: 996px) {
+  .navbar {
+    height: 60px; /* Reducido ligeramente para mayor espacio en móvil */
+  }
+
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  /* Alinear logo e icono */
+  .navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .navbar__logo {
+    height: 28px !important;
+    width: auto;
+    margin: 0 !important;
+  }
+
+  .navbar__title {
+    font-size: 1.05rem !important;
+    letter-spacing: 1px !important;
+    margin: 0 !important;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .navbar__toggle {
+    margin: 0 4px 0 0 !important;
+    padding: 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Alinear el buscador de Lunr a la derecha de forma prolija */
+  .navbar__search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto !important;
+    padding: 0 4px 0 0 !important;
+  }
+
+  /* Reducir y afinar el input de búsqueda */
+  .navbar__search-input {
+    height: 32px !important;
+    font-size: 0.8rem !important;
+    padding: 0 12px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    max-width: 110px !important; /* Evita que choque con el título */
+    width: 110px !important;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    color: var(--yc-text) !important;
+  }
+
+  .navbar__search-input:focus {
+    max-width: 145px !important;
+    width: 145px !important;
+    border-color: var(--yc-yellow) !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 0 10px var(--yc-yellow-glow) !important;
+  }
+
+  /* Eliminar overlays molestos que puedan superponerse */
+  .navbar__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__items--right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+/* En teléfonos compactos (380px o menos), ocultamos el texto Yoru Cafe
+   para dar prioridad al logo de la flor y a la barra de búsqueda */
+@media (max-width: 380px) {
+  .navbar__title {
+    display: none !important;
+  }
+  
+  .navbar__brand {
+    gap: 0;
+  }
+
+  .navbar__search-input {
+    max-width: 130px !important;
+    width: 130px !important;
+  }
+
+  .navbar__search-input:focus {
+    max-width: 160px !important;
+    width: 160px !important;
+  }
+}
