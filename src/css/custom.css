@@ -1444,6 +1444,7 @@ body.yc-lightbox-noscroll {
 html, body {
   max-width: 100% !important;
   overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
 }
 
 /* Ensure all custom layout containers scale down correctly and never cause overflow */
