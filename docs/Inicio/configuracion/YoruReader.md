@@ -406,14 +406,14 @@ Si estás leyendo en una computadora, puedes manejar la lectura cómodamente des
           <span style={{ fontSize: '1.3rem' }}>🪟</span>
           <span style={{ fontWeight: '700', fontSize: '1rem' }}>Windows</span>
         </div>
-        <a href="https://github.com/zams0527-eng/Yoru-Reader/raw/main/downloads/Yoru-Reader%20Setup%201.0.2.exe"
+        <a href="https://github.com/zams0527-eng/Yoru-Reader/raw/main/downloads/Yoru-Reader%20Setup%201.0.3.exe"
            target="_blank" rel="noopener noreferrer"
            style={{ color: 'var(--yc-yellow)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600' }}>
           ↓ Windows 10+ (x64)
         </a>
       </div>
       <ol style={{ margin: '0', paddingLeft: '1.25rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: '1.7' }}>
-        <li>Descarga el instalador ejecutable (<code>Yoru-Reader Setup 1.0.2.exe</code>).</li>
+        <li>Descarga el instalador ejecutable (<code>Yoru-Reader Setup 1.0.3.exe</code>).</li>
         <li>Haz doble clic en el archivo descargado para iniciar el asistente de instalación.</li>
         <li>Sigue los pasos en pantalla para crear un acceso directo en tu escritorio.</li>
         <li>Abre la aplicación, arrastra tu primera novela en formato <code>.txt</code> o <code>.epub</code> y listo.</li>
@@ -441,14 +441,14 @@ Si estás leyendo en una computadora, puedes manejar la lectura cómodamente des
           <span style={{ fontSize: '1.3rem' }}>🤖</span>
           <span style={{ fontWeight: '700', fontSize: '1rem' }}>Android</span>
         </div>
-        <a href="https://github.com/zams0527-eng/Yoru-Reader/raw/main/downloads/Yoru-Reader-1.0.2.apk"
+        <a href="https://github.com/zams0527-eng/Yoru-Reader/raw/main/downloads/Yoru-Reader-1.0.3.apk"
            target="_blank" rel="noopener noreferrer"
            style={{ color: 'var(--yc-yellow)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600' }}>
           ↓ Yoru Reader (.apk)
         </a>
       </div>
       <ol style={{ margin: '0', paddingLeft: '1.25rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: '1.7' }}>
-        <li>Descarga el archivo <code>.apk</code> (<code>Yoru-Reader-1.0.2.apk</code>) en tu móvil.</li>
+        <li>Descarga el archivo <code>.apk</code> (<code>Yoru-Reader-1.0.3.apk</code>) en tu móvil.</li>
         <li>Si es necesario, habilita "Instalar aplicaciones de fuentes desconocidas" en los ajustes de seguridad.</li>
         <li>Ejecuta el archivo descargado y confirma la instalación.</li>
         <li>Abre la aplicación, crea tu perfil e importa tus novelas desde el almacenamiento interno.</li>
